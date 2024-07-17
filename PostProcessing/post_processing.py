@@ -29,6 +29,15 @@ def modify_operators(code):
     
     return modified_code
 
+def ensure_code_modification(original_code):
+    modified_code = modify_operators(original_code)
+    
+    # Keep modifying the code until a change is detected
+    while modified_code == original_code:
+        modified_code = modify_operators(original_code)
+    
+    return modified_code
+
 #Test case for a given code
 original_code = """
 def maxSubArray(nums):
@@ -44,5 +53,5 @@ def maxSubArray(nums):
 """
 
 # Modify 2 or 3 random keys from operator_mapping
-modified_code = modify_operators(original_code)
+modified_code = ensure_code_modification(original_code)
 print(modified_code)
