@@ -1,6 +1,6 @@
 # Token Categorizer file (token_categorize.py)
 
-- This file provides a Python script to categorize tokens from a given list(tokens we get from the deepseek model) into logical operators, keywords, arithmetic operators, and identifiers. The categorization helps in analyzing and understanding the distribution and usage of different types of tokens in a given text or code snippet, which we are using in postprocessing for generating codes with some logical issue .
+- This Python script is categorize tokens from a given list(tokens we get from the deepseek model) into logical operators, keywords, arithmetic operators, and identifiers. The categorization helps in analyzing and understanding the distribution and usage of different types of tokens in a given text or code snippet, which we are using in postprocessing for generating codes with some logical issue .
 
 ## Features
 
